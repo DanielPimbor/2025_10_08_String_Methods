@@ -20,14 +20,14 @@ rendeles = input('Add meg az ételrendelésedet és kicserélem az almákat kör
 # else:
 #     print('Nincs a rendelésedben se alma se körte.')
 
-if "alma" in  rendeles or "almás" in rendeles or "almával" in rendeles:
+if "alma" in  rendeles:
     
-    valtozott = rendeles.replace("alma", "körte").replace( "almás", "körtés").replace("almával", "körtével")
+    valtozott = rendeles.replace("alma", "körte")
 
     print(f'Megváltoztatott ételrendelés:\n {valtozott}')
 
-elif "körte" in rendeles or "körtés" in  rendeles or "körtével" in rendeles:
+elif "körte" in rendeles:
     
-    valtozott = rendeles.replace("körtével", "almával").replace("körtés", "almás").replace("körte", "alma")
+    valtozott = rendeles.replace("körte", "alma")
 
     print(f'Megváltoztatott ételrendelés:\n {valtozott}')
